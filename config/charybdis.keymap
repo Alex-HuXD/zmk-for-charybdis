@@ -11,6 +11,11 @@
 };
 
 / {
+    chosen {
+        zmk,hold_tap_tapping_term_ms = <500>; 
+        zmk,hold_tap_flavor = "balanced";
+        zmk,hold_tap_quick_tap_ms = <200>;
+    };
     combos {
         compatible = "zmk,combos";
 
