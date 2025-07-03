@@ -48,25 +48,9 @@
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 &none           &kp GRAVE           &kp LBKT            &kp RBKT            &trans              &trans              &trans          &trans               &trans                 &trans                &trans                    &none
 //                                                                                                           ||
-&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &trans              &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
+&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &kp DEL             &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
 //                                                                                                           ||
-&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &trans              &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
-//                                                                                                           ||
-                                                        &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
-                                                        // --------------------------------------------------||-----------------------------------------------
-                                                                            &none               &none               &none
-            >;
-        };
-
-        Function {
-            bindings = <
-&none           &none               &none               &none               &none               &none               &none           &none               &none                   &none                 &none                     &none
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&none           &kp GRAVE           &kp LBKT            &kp RBKT            &trans              &trans              &trans          &trans               &trans                 &trans                &trans                    &none
-//                                                                                                           ||
-&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &trans              &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
-//                                                                                                           ||
-&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &trans              &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
+&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &kp BSPC            &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
 //                                                                                                           ||
                                                         &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
                                                         // --------------------------------------------------||-----------------------------------------------
@@ -78,11 +62,27 @@
             bindings = <
 &none           &none               &none               &none               &none               &none               &none           &none               &none                   &none                 &none                     &none
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&none           &kp GRAVE           &kp LBKT            &kp RBKT            &trans              &trans              &trans          &trans               &trans                 &trans                &trans                    &none
+&none           &trans              &trans              &trans              &trans              &trans              &kp LBKT        &kp N7              &kp N8                  &kp N9                &kp RBKT                  &none
 //                                                                                                           ||
-&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &trans              &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
+&none           &trans              &trans              &trans              &trans              &kp PLUS            &kp SQT         &kp N4              &kp N5                  &kp N6                &kp EQUAL                 &none
 //                                                                                                           ||
-&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &trans              &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
+&none           &kp LEFT            &kp UP              &kp DOWN            &kp RIGHT           &kp MINUS           &kp GRAVE       &kp N1              &kp N2                  &kp N3                &kp BSLH
+//                                                                                                           ||
+                                                        &trans              &trans              &trans              &kp DOT         &kp N0
+                                                        // --------------------------------------------------||-----------------------------------------------
+                                                                            &none               &none               &none
+            >;
+        };
+
+        Function {
+            bindings = <
+&none           &none               &none               &none               &none               &none               &none           &none               &none                   &none                 &none                     &none
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+&none           &kp F12             &kp F7              &kp F8              &kp F9              &kp PRCNT           &trans          &trans              &trans                  &trans                &trans                    &none
+//                                                                                                           ||
+&none           &kp F11             &kp F4              &kp F5              &kp F6              &trans              &trans          &trans              &trans                  &trans                &trans                    &none
+//                                                                                                           ||
+&none           &kp F10             &kp F1              &kp F2              &kp F3              &trans              &trans          &kp LEFT            &kp DOWN                &kp UP                &kp RIGHT                 &none
 //                                                                                                           ||
                                                         &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
                                                         // --------------------------------------------------||-----------------------------------------------
@@ -94,15 +94,15 @@
             bindings = <
 &none           &none               &none               &none               &none               &none               &none           &none               &none                   &none                 &none                     &none
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&none           &kp GRAVE           &kp LBKT            &kp RBKT            &trans              &trans              &trans          &trans               &trans                 &trans                &trans                    &none
+&none           &kp TILDE           &kp AMPS            &kp STAR            &kp LPAR            &kp RBRC              &trans        &trans               &trans                 &trans                &trans                    &none
 //                                                                                                           ||
-&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &trans              &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
+&none           &kp DQT             &kp DLLR            &kp PRCNT           &kp CARET           &kp PLUS              &trans        &trans               &trans                 &trans                &trans                    &none
 //                                                                                                           ||
-&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &trans              &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
+&none           &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp PIPE              &trans        &trans               &trans                 &trans                &trans                    &none
 //                                                                                                           ||
-                                                        &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
+                                                        &kp LPAR            &kp RPAR            &kp UNDER             &kp ENTER     &kp BACKSPACE
                                                         // --------------------------------------------------||-----------------------------------------------
-                                                                            &none               &none               &none
+                                                                            &none               &none                 &none
             >;
 
             trackball-bindings = <&tsl>;//滚轮层
@@ -112,11 +112,11 @@
             bindings = <
 &none           &none               &none               &none               &none               &none               &none           &none               &none                   &none                 &none                     &none
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-&none           &kp GRAVE           &kp LBKT            &kp RBKT            &trans              &trans              &trans          &trans               &trans                 &trans                &trans                    &none
+&none           &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_PRV      &bt BT_PRV          &bt BT_CLR              &trans                &bootloader               &none
 //                                                                                                           ||
-&none           &kp SQT             &kp LPAR            &kp RPAR            &trans              &trans              &kp CAPS        &kp LEFT             &kp DOWN               &kp UP                &kp RIGHT                 &none
+&none           &kp C_PREV          &kp C_VOL_DN        &kp C_MUTE          &kp C_VOL_UP        &kp C_NEXT          &trans          &trans              &trans                  &trans                &trans                    &none
 //                                                                                                           ||
-&none           &kp BSLH            &kp LBRC            &kp RBRC            &trans              &trans              &kp INS         &kp HOME             &kp PAGE_DOWN          &kp PAGE_UP           &kp END                   &none
+&none           &trans              &trans              &trans              &trans              &trans              &trans          &trans              &trans                  &trans                &trans                    &none
 //                                                                                                           ||
                                                         &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
                                                         // --------------------------------------------------||-----------------------------------------------
