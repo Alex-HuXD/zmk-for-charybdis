@@ -5,9 +5,9 @@
 
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <500>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <200>;
 };
 
 / {
@@ -56,6 +56,8 @@
                                                         // --------------------------------------------------||-----------------------------------------------
                                                                             &none               &none               &none
             >;
+
+            trackball-bindings = <&tsl>;//滚轮层
         };
 
         Numbers {
