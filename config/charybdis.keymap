@@ -116,7 +116,7 @@
 //                                                                                                           ||
 &none           &kp C_PREV          &kp C_VOL_DN        &kp C_MUTE          &kp C_VOL_UP        &kp C_NEXT          &trans          &trans              &trans                  &trans                &trans                    &none
 //                                                                                                           ||
-&none           &trans              &trans              &trans              &trans              &trans              &trans          &trans              &trans                  &trans                &trans                    &none
+&none           &trans              &mkp LCLK           &mkp MCLK           &mkp RCLK           &trans              &trans          &trans              &trans                  &trans                &trans                    &none
 //                                                                                                           ||
                                                         &trans              &trans              &trans              &kp ENTER       &kp BACKSPACE
                                                         // --------------------------------------------------||-----------------------------------------------
