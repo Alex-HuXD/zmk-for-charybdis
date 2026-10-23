@@ -1,62 +1,62 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   Base:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - \
-  - Tab
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
+  - F
+  - P
+  - B
+  - J
+  - L
   - U
+  - Y
+  - ;
+  - ''
+  - ''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
   - I
   - O
-  - P
-  - BSPC
-  - Shift
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - Ctrl
+  - ''
+  - ''
   - {t: Z, h: Mouse}
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - ','
   - .
   - {t: /, h: Mouse}
+  - ''
   - ESC
-  - LEFT WIN
   - Space
-  - {t: Enter, h: Lower}
+  - {t: Tab, h: Lower}
   - {t: Enter, h: Raise}
-  - Alt
-  - Alt
-  - CAPSLOCK
-  - DEL
+  - BSPC
+  - ''
+  - ''
+  - ''
   Lower:
   - '~'
   - '!'
