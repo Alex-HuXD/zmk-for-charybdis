@@ -22,7 +22,7 @@
 &none  &kp Q        &kp W           &kp F       &kp P             &kp B        &kp J        &kp L              &kp U                &kp Y            &kp SEMICOLON  &none
 &none  &mt LCTRL A  &mt LEFT_ALT R  &mt LCMD S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RCTRL O    &none
 &none  &kp Z        &kp X           &kp C       &kp D             &kp V        &kp K        &kp H              &kp COMMA            &kp DOT          &kp SLASH      &none
-                                    &lt 2 ESC   &lt 1 SPACE       &lt 2 TAB    &lt 4 ENTER  &lt 3 BACKSPACE
+                                    &lt 5 ESC   &lt 1 SPACE       &lt 2 TAB    &lt 4 ENTER  &lt 3 BACKSPACE
                                                 &none             &none        &none
             >;
         };
