@@ -18,56 +18,78 @@
 
         Base {
             bindings = <
-&none  &none    &none  &none    &none      &none        &none        &none          &none      &none    &none          &none
-&none  &kp Q    &kp W  &kp F    &kp P      &kp B        &kp J        &kp L          &kp U      &kp Y    &kp SEMICOLON  &none
-&none  &kp A    &kp R  &kp S    &kp T      &kp G        &kp M        &kp N          &kp E      &kp I    &kp O          &none
-&none  &lt 3 Z  &kp X  &kp C    &kp D      &kp V        &kp K        &kp H          &kp COMMA  &kp DOT  &lt 3 SLASH    &none
-                       &kp ESC  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE
-                                &none      &none        &none
+&none  &none        &none           &none       &none             &none        &none        &none              &none                &none            &none          &none
+&none  &kp Q        &kp W           &kp F       &kp P             &kp B        &kp J        &kp L              &kp U                &kp Y            &kp SEMICOLON  &none
+&none  &mt LCTRL A  &mt LEFT_ALT R  &mt LCMD S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RCTRL O    &none
+&none  &kp Z        &kp X           &kp C       &kp D             &kp V        &kp K        &kp H              &kp COMMA            &kp DOT          &kp SLASH      &none
+                                    &lt 2 ESC   &lt 1 SPACE       &lt 2 TAB    &lt 4 ENTER  &lt 3 BACKSPACE
+                                                &none             &none        &none
             >;
         };
 
-        Lower {
+        Nav {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT       &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
-&kp LSHFT  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BACKSLASH  &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LCTRL  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &none          &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                          &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER      &kp RIGHT_ALT
-                                                        &none         &none          &none
+&none  &none          &none                 &none                  &none   &none            &none       &none          &none          &none        &none       &none
+&none  &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans           &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &none
+&none  &kp SQT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp DEL          &kp CAPS    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT   &none
+&none  &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &kp BACKSPACE    &kp INS     &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &none
+                                            &trans                 &trans  &trans           &kp ENTER   &kp BACKSPACE
+                                                                   &none   &none            &none
             >;
         };
 
-        Raise {
+        number {
             bindings = <
-&kp F12        &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6             &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(LBKT)    &kp LS(RBKT)       &none          &none     &none      &none    &none
-&kp LSHFT      &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &none           &kp LS(BACKSLASH)  &none          &kp UP    &none      &none    &none
-&kp LCTRL      &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none              &kp LEFT       &kp DOWN  &kp RIGHT  &none    &none
-                                       &kp LEFT_WIN   &kp SPACE      &kp ENTER       &trans             &kp RIGHT_ALT
-                                                      &none          &none           &none
+&trans  &trans  &trans  &trans  &trans  &trans       &trans        &trans        &trans        &trans        &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp PLUS     &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &kp MINUS    &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
+                        &trans  &trans  &trans       &kp DOT       &kp NUMBER_0
+                                &trans  &trans       &trans
             >;
         };
 
-        Mouse {
+        function {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none           &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR      &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &none         &none         &mkp MCLK     &none      &none         &none           &none      &mkp MCLK     &none         &none         &none
-&bootloader  &none         &mkp RCLK     &mo 4         &mkp LCLK  &none         &studio_unlock  &mkp LCLK  &mo 4         &mkp RCLK     &none         &bootloader
-                                         &none         &mkp LCLK  &mkp RCLK     &mkp RCLK       &mkp LCLK
-                                                       &none      &none         &none
+&trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+                         &trans  &trans  &trans    &trans  &trans
+                                 &trans  &trans    &trans
             >;
         };
 
-        Scroll {
+        symbols {
             bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
-&none        &none         &none         &mkp MCLK     &none      &none         &none       &none      &mkp MCLK     &none         &none         &none
-&bootloader  &none         &mkp RCLK     &none         &mkp LCLK  &none         &none       &mkp LCLK  &none         &mkp RCLK     &none         &bootloader
-                                         &none         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &none         &none
+&trans  &trans             &trans           &trans        &trans                &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE          &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PIPE           &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+                                            &kp LPAR      &kp RPAR              &kp UNDER                &trans  &trans
+                                                          &trans                &trans                   &trans
+            >;
+        };
+
+        system {
+            bindings = <
+&trans  &trans        &trans             &trans        &trans           &trans          &trans      &trans      &trans          &trans  &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &bt BT_PRV  &bt BT_NXT  &bt BT_CLR_ALL  &trans  &bootloader  &trans
+&trans  &kp C_PREV    &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP  &kp C_NEXT      &trans      &trans      &trans          &trans  &trans       &trans
+&trans  &trans        &mkp LCLK          &mkp MCLK     &mkp RCLK        &trans          &trans      &trans      &trans          &trans  &trans       &trans
+                                         &trans        &trans           &trans          &trans      &trans
+                                                       &trans           &trans          &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
             >;
         };
     };
